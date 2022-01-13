@@ -1,5 +1,6 @@
 import re
 def EmailValidateFunction(Text) : 
+    Text = Text.strip() 
     if re.match("^[_.0-9]+$",Text[0]) : 
         return False 
     elif re.match("^[A-z0-9_.]+@+[A-z]+[.]+[A-z]+$",Text) : 
